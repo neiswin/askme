@@ -3,8 +3,8 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif';
 }
 
-a {
-    color: #A66946;
+a, button {
+    color: #8C4C35;
 }
 
 .title-lg {
