@@ -1,4 +1,11 @@
 /*
- *= require_tree .
- *= require_self
+ *= require reset
+
+ *= require text
+
+ *= require spacing
+ 
+ *= require layout
+
+
  */

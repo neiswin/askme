@@ -1,8 +1,26 @@
 body {
+    color: #102226;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif';
+}
+
+a {
+    color: #A66946;
 }
 
 .title-lg {
     font-size: 175%;
 
+}
+
+.title-md, .title {
+    font-size: 150%;
+
+}
+.title-sm, .title {
+    font-size: 125%;
+
+}
+
+.text-sm {
+    font-size: 80%;
 }

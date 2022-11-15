@@ -1,10 +1,13 @@
-<h1>Questions</h1>
+<div class="container">
+    <h1 class='title-lg mb'>Questions</h1>
 
-<% @questions.each do |question| %>
-<p><%= link_to "Вопрос #{question.id}", question_path(id: question.id) %></p>
+    <% @questions.each do |question| %>
+    <p class="mb-sm"><%= link_to "Вопрос #{question.id}", question_path(id: question.id) %></p>
 
-<% end %>
+    <% end %>
 
-<p></p>
-<p><%= link_to "Create new question", new_question_path %></p>
-<p></p>
+    <p></p>
+    <p class="mt"><%= link_to "Create new question", new_question_path %></p>
+    <p></p>
+
+</div>

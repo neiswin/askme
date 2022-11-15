@@ -1,9 +1,10 @@
-<h2>Редактирование вопроса <%= @question.id %></h2>
-
-<%= form_with model: @question do |form| %>
-    <p><%= form.label :body, 'Text question' %></p>
-    <p><%= form.text_area :body, rows: 5 %></p>
-    <p><%= form.label :user_id %></p>
-    <p><%= form.text_field :user_id %></p>
-    <p><%= form.submit 'Save' %></p>
-<% end %>
+<div class="container">
+  <h2 class='title-lg'>Редактирование вопроса <%= @question.id %></h2>
+  <%= form_with model: @question do |form| %>
+      <p><%= form.label :body, 'Text question' %></p>
+      <p><%= form.text_area :body, rows: 5 %></p>
+      <p class="mt"><%= form.label :user_id %></p>
+      <p><%= form.text_field :user_id %></p>
+      <p class="mt"><%= form.submit 'Save' %></p>
+  <% end %>
+</div>
