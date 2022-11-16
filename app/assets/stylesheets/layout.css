@@ -12,6 +12,7 @@ body {
 }
 
 .container {
-    background: #BFBFBF;
+    background: #d0cccc;
     padding: 20px;
+    border: #505050;
 }

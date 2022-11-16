@@ -1,15 +1,23 @@
 <div class="container">
-    <h1 class='title-lg mb'>Questions</h1>
-
-    <% @questions.each do |question| %>
-    <p class="mb-sm"><%= link_to "Вопрос #{question.id}", question_path(id: question.id) %></p>
-
-    <% end %>
-
-    
     <p class="mt">
         <%= link_to "Create new question", new_question_path, class: 'button button-main' %>
     </p>
 
+    <p class="mt">
+        <%= render 'form', question: @question %>  
+    </p>
 
 </div>
+
+<div class="container mt-sm">
+    <h1 class='title-lg mb'>
+        <%= @questions.count %>
+        <%= sklonenie(@questions.count, 'вопрос', 'вопроса','вопросов') %>
+    </h1>
+</div>
+    
+<% @questions.each do |question| %>
+<div class="mt-sm container">
+  <%= render question %>
+</div>
+<% end %>

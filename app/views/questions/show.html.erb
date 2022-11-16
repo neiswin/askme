@@ -1,15 +1,5 @@
 <div class="container">
     <h1 class="title-lg mb"> Вопрос</h1>
-    <p class="mb-sm"><%=  @question.body %></p>
-
-    <p class="mb-sm">user id: <%= @question.user_id %></p>
-
-
-    <div class="mt">
-        <%=  link_to fa_icon('pencil'), edit_question_path(@question), title: "Изменить вопрос" %>
-    
-    
-        <%= button_to fa_icon('trash-o'), question_path(@question), method: :delete, title: "удалить вопрос" %>
-    </div>
+    <%= render 'question', question: @question %>
     <p class="mt"><%=  link_to "Все вопросы:", questions_path %></p>
 </div>

@@ -1,5 +1,5 @@
 body {
-    color: #102226;
+    color: #131e21;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif';
 }
 
@@ -24,3 +24,8 @@ a, button {
 .text-sm {
     font-size: 80%;
 }
+
+.text-gray {
+    color: rgb(106, 105, 105);
+}
+
