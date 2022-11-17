@@ -29,3 +29,6 @@ a, button {
     color: rgb(106, 105, 105);
 }
 
+.text-bold {
+    font-weight: bold;
+}
